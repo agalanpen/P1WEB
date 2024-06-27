@@ -102,7 +102,6 @@ body {
         padding: 10px 15px;
     } 
     #fboton:hover{
-        height: #42FF00;
         color:white;
         background-color: black;
         font-family: "Press Start 2P", system-ui;
@@ -365,7 +364,7 @@ body {
     }
 
     nav ul li a:hover {
-        color: #42FF00; !important
+        color: #42FF00; 
     }
 
     /*footer de la web */
