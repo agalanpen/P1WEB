@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Libroot - La mejor biblioteca online</title>
+<link rel="shortcut icon" href="./img/logo.png"> <!-- Libroot -->
+<meta name="description" content="Practica final de la biblioteca UOC 2024">
+
+<link rel="stylesheet" href="css/styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"> <!-- Repo iconos !-->
+</head>
+<body>
+    <header>
+        <div class="header-idioma">
+            <img src="img/spain.png" alt="cambiar idioma a español">
+            <img src="img/cat.png" alt="cambiar idioma a catalan">
+            <img src="img/en.png" alt="cambiar idioma a ingles">
+        </div>
+        
+        <div class="header-content"> <!-- Header con imagen !-->
+            <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button> <!-- Boton menú hamburguesa !-->
+            <h1 class="logo">LIBROOT</h1>
+            <a href="./index.html"><img src="img/logo.png" class="img_logo" alt="logotipo de libroot"></a>
+        </div>
+        
+    </header>
+    <nav class="nav" id="nav"> <!-- Menú de navegación !-->
+        <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+        <ul class="nav-list">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./catalogo.html">Catalogo</a></li>
+            <li><a href="./eventos.html">Eventos</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="./nosotros.html">Sobre nosotros</a></li>
+        </ul>
+        <form>
+        <input type="text" id="fbuscar" name="fbuscar"> <input id="fboton" type="submit" value="Buscar">
+        </form>
+    </nav>
+    <main> <!-- Contenido de la web !-->
+        <section class="banner">
+            <article class="banner-content">
+                <div class="banner-img">
+                    <a href="./index.html"><img src="img/banner_1.png" class="img_banner" alt="Banner de anuncios"></a>
+                </div>
+            </article>
+        </section>
+        <section class="base_datos">
+            <h1 class="title-index">Base de datos</h1>
+            <div class="base_datos-content">
+                <div class="contenido">
+                    <a href="#"><img src="img/img_1.png" class="img_portada" alt="Portada del libro"></a>
+                    <div class="libro_infor">
+                        <a><h2>SQL SERVER</h2></a>
+                        <p>Autor: JEROME GABILLAUD</p>
+                        <p>Valoracion: <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></p>
+                    </div>
+                </div>
+                <div class="contenido">
+                    <a href="#"><img src="img/img_2.png" class="img_portada" alt="Portada del libro"></a>                    <div class="libro_infor">
+                        <h2>POSTGRESQL</h2>
+                        <p>Autor:RAFA OBERGOZO</p>
+                        <p>Valoracion: <i class="bi bi-star-fill"></i></p>
+                    </div>
+                </div>
+                <div class="contenido">
+                    <a href="#"><img src="img/img_3.png" class="img_portada" alt="Portada del libro"></a>
+                    <div class="libro_infor">
+                        <h2>DATA MESH</h2>
+                        <p>Autor:ZHAMAK DEHGHANI</p>
+                        <p>Valoracion: <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer de la web !-->
+    <footer>
+        <div class="footer-titles">
+            <div class="logo-footer">
+                <h1 class="logo">LIBROOT</h1>
+                <a href="./index.html"><img src="img/logo.png" class="img_logo" alt="logotipo de libroot"></a>
+            </div>
+            <div class="redes">
+                <h1 class="red">Redes sociales</h1>
+            </div>
+        </div>
+        
+        <div class="footer-rss">
+            <ul>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-linkedin"></i>
+            </ul>
+
+        </div>
+
+    </footer>
+      
+</body>
+    <!-- Scripts para el menú hamburguesa en versión móvil !-->
+    <script>
+        const nav = document.querySelector("#nav");
+        const abrir = document.querySelector("#abrir");
+        const cerrar = document.querySelector("#cerrar");
+
+        abrir.addEventListener("click", () => {
+            nav.classList.add("visible");
+        })
+
+        cerrar.addEventListener("click", () => {
+            nav.classList.remove("visible");
+        })
+    </script>
+</html>

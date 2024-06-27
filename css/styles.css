@@ -1,0 +1,520 @@
+body {
+    background-color: black;
+    font-family: "Press Start 2P", system-ui;
+    overflow-x: hidden;
+}
+
+
+/*Web version escritorio */
+@media only screen and (min-width : 901px) {
+    /* header de la web */
+    header{
+        background-color: white;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+
+    }
+    .header-idioma{
+        text-align: right;
+        padding: 10px
+        
+    }   
+    .header-idioma img{
+        width: 20px;
+        height: 20px;
+        
+    } 
+    .header-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+    .logo{
+        color: black;
+    }
+    .img_logo{
+        width: 80px;
+        height: auto;
+        margin-left: 10px;
+    }
+    
+    /* NAV botones */
+    
+    nav {
+        background-color: white;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+   
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin:15px;
+        padding: 20px;
+        background-color: black;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav ul li a:hover {
+        color: #42FF00;
+    }
+    
+    nav form {
+        margin-top: 10px;
+        text-align: center;
+        align-content: center
+        
+    }   
+    nav #fbuscar {
+        width: 400px;
+        height: 35px;
+        background-color: gray;
+        border:none;
+        color:white;
+        font-family: "Press Start 2P", system-ui;
+        
+    }  
+    nav form{
+        padding: 20px;
+        padding-bottom: 50px;
+    }
+    #fboton {
+        height: 40px;
+        color:white;
+        background-color: black;
+        font-family: "Press Start 2P", system-ui;
+        padding: 10px 15px;
+    } 
+    #fboton:hover{
+        height: #42FF00;
+        color:white;
+        background-color: black;
+        font-family: "Press Start 2P", system-ui;
+        padding: 10px 15px;
+    } 
+    
+    .cerrar-menu{ /* Ocultamos menu dispositivo movil */
+        visibility: hidden;
+    }
+    
+    .abrir-menu{ /* Ocultamos menu dispositivo movil */
+        visibility: hidden;
+    }
+    
+    /* Footer de la web */
+    footer{
+        background-color: white;
+        padding: 30px;
+    }
+    footer .footer-titles{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .logo-footer{
+        display: flex;
+    }
+    footer .footer-rss{
+        text-align: right;
+        margin-right: 330px;
+    }
+    footer .logo{
+        color:black;
+    }
+    
+    
+    main{
+        align-content: center;
+        color:white;
+        text-align: center;
+    }
+    /*Main index */
+    .banner{
+        padding: 30px;
+    }
+    
+    /*libros index */
+    .base_datos .title-index{
+        color: #42FF00;
+    }
+    .base_datos-content{
+        justify-content: center;
+        padding: 30px;
+        display: flex;
+        column-gap: 50px;
+    }
+    
+    .img_portada{
+        width: 330px;
+        height: 330px;
+    }
+    
+    .libro_infor{
+        text-align: left;
+    }
+    
+    .libro_infor h2{
+        color:red;
+    }
+    .libro_infor h2:hover{
+        color:#42FF00;
+    }
+    
+    .libro_infor p{
+        font-size: 10px;
+    }
+    
+/* Categorias */ 
+    
+    .categorias {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        column-gap: 40px;
+    }
+    
+    .categorias li{
+        align-content: center;
+        text-align: center;
+        background-color: white;
+        height: 60px;
+        padding: 10px;
+        
+    }
+    .categorias li:hover{
+        align-content: center;
+        text-align: center;
+        background-color: #42FF00;
+        height: 60px;
+        padding: 10px;
+        color:white;
+        transition: 1.2s;
+        
+    }
+    .categorias li a{
+        text-decoration: none;
+        color:black;
+        }
+    .subtitle{
+        color:#EBFF00;
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .form_cata{
+        visibility: hidden;
+    }
+    
+    /* Eventos */
+    
+    table{
+        border: 4px solid white;
+    }
+    tr{
+        border: 4px solid white;
+    }
+    th{
+        border: 4px solid white;
+        color:red;
+        background-color: white;
+        padding: 20px;
+    }
+    td{
+        border: 4px solid white;
+        padding: 10px;
+        width: 30px;
+        height: 50px;
+    }
+    .calendario-content{
+        width: fit-content;
+        margin: 0 auto; /* Posicionar el contenido en el centro*/
+    }
+    tr td{
+        text-align: left;
+    }
+    .ocupado{
+        background-color: gray;
+        color:#42FF00;
+    }
+    
+    .title-calendario{
+        color:#42FF00;
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+    
+    /*Nosotros Ubicación */
+    
+    .title-nosotros{
+         color:#42FF00;
+        padding: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .nosotros-content{
+        padding: 20px;
+    }
+    .img_mapa{
+        margin-top: 20px;
+        width: 800px;
+        margin-bottom: 80px;
+    }
+    
+    
+    
+}
+
+
+
+
+
+/* Web en version movil */
+@media only screen and (max-width : 900px) {
+    h1{
+        font-size: 10px;
+    }
+        header{
+        font-size: 10px;
+        text-align: center;
+        padding: 20px;
+        background-color: white;
+
+    }
+        
+    .header-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+    .logo{
+        color: black;
+    }
+    .img_logo{
+        width: 40px;
+        height: auto;
+        margin-left: 10px;
+    }
+    .header-idioma{
+        display: none;
+    }
+    nav form{
+        display: none;
+    }
+    
+    
+    /*MENU HAMBURGUESA */
+    
+    .cerrar-menu{
+        color:black;
+        background-color: white;
+    }
+    
+    .abrir-menu{
+        margin-right: 10px;
+        text-align: left;
+        color:white;
+        background-color: black;
+    }
+    
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        padding: 30px;
+        
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav ul li a:hover {
+        color: #42FF00; !important
+    }
+
+    /*footer de la web */
+    /* Footer de la web */
+    footer{
+        
+        background-color: white;
+        padding: 20px;
+    }
+    footer .footer-titles{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .logo-footer{
+        display: flex;
+    }
+    footer .footer-rss{
+        text-align: right;
+    }
+    
+    /*Main de index */
+    .banner{
+        display: none;
+    }
+    .title-index{
+        padding: 20px;
+        font-size: 15px;
+        text-align: center;
+        color:#42FF00;
+    }
+    .base_datos .title{
+        color:red;
+    }
+    .img_portada{
+        width: 230px;
+        height: 230px;
+    }
+    
+    .contenido{
+        background-color: white;
+        align-content: center;
+        text-align: center;
+        padding: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .libro_infor h2{
+        font-size: 14px;
+    }
+    .libro_infor a:hover{
+        color:#42FF00;
+        font-size: 14px;
+    }
+    .libro_infor p{
+        font-size: 10px;
+    }
+    
+    
+    /* Categorias */ 
+    .btn-content{ /* OCULTAMOS VERSIÓN PC */
+        display: none;
+    }
+    #categorias{
+        display: none;
+    }
+    .title{
+        display: none;
+    }
+    .subtitle{
+        color:yellow;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .form_cata{
+        margin-top: 30px;
+        padding: 10px;
+        align-content: center;
+        text-align: center;
+        
+    }
+    .form_cata select{
+        height: 30px;
+        font-family: "Press Start 2P", system-ui;
+    }
+    
+    .libro_infor p{
+        text-align: left;
+    }
+    
+    .libro_infor h2{
+        color:red;
+        
+    }
+    .libro_infor h2:hover{
+        color:#42FF00;;
+        
+    }
+    
+    /* Eventos */
+    table{
+        color:white;
+        display: block;
+        font-size: 7px;
+    }
+    td{
+        border: 1px solid white;
+    }
+    th{
+        border: 1px solid white;
+    }
+    .ocupado{
+        background-color: gray;
+        color:#42FF00;
+    }
+    
+    .title-calendario{
+        text-align: center;
+        color:#42FF00;
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+    
+    /*contacto*/
+    
+    .title-nosotros{
+        text-align: center;
+         color:#42FF00;
+        padding: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .nosotros-content{
+        align-content: center;
+        justify-items: center;
+        text-align: center;
+        padding: 20px;
+        color:white;
+        font-size: 10px;
+    }
+    .img_mapa{
+        margin-top: 20px;
+        width: 300px;
+        margin-bottom: 180px;
+    }
+    
+    
+}
